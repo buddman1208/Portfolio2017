@@ -56,18 +56,11 @@
 
 > Bill.IM
 * 2015 선린 모바일 콘텐츠 경진대회 은상
->> Team
-
-```text
-    Android Developer : 오준석
-    Server Developer : 유덕남
-    UI/UX Designer : 구창림
-    Project Manager : 박지수
-```
 
 >> 기획
 
 ```text
+
     필요할때 꼭 없는 그러한 여러 물건들을 같은 단체 내에서 빌릴 수 있도록 해주는 서비스. 중고 제품의 물물교환도 가능하도록 하여, 단체 내에서 새로운 물건을 구매 하는 것이 아닌 서로 필요한 것을 주고받으며 도울 수 있도록 만들어 주는 서비스.
     임대 기능, 신고 기능, 중고 제품 교환 기능 제공.
 ```
@@ -75,9 +68,56 @@
 >> 기술
 
 ```text
-    서버 -> 클라이언트에는 Google Cloud Messaging을 사용하였음.
-    클라이언트 -> 서버에는 HTTP 통신을 이용하였음. (Retrofit 사용)
-    레이드의 각각 방은 Socket을 이용해 실시간 통신을 가능하게 하였고, 레이드당 방을 각각 생성하였음.
+    서버는 Node.JS로 구동하였으며 CoffeeScript로 작성되었고, MongoDB를 사용하였음.
+    클라이언트는 안드로이드로 구현하였으며, Realm 데이터베이스와 SharedPreferences를 사용하였음.
+    FloatingActionButton, Material, MaterialViewPager, MaterialEditText, SwipyRefreshLayout, MaterialDialog 라이브러리를 사용하였음.
+    서버 -> 안드로이드 클라이언트에는 Google Cloud Messaging을 사용하였음.
+    안드로이드 클라이언트 -> 서버에는 HTTP 통신을 이용하였음. (Retrofit 사용)
+    각각의 거래 항목은 데이터베이스에 저장하였으며 변경사항이 요청자 / 거래자로부터 발생하면 GCM을 이용해 클라이언트에 푸시를 보내고, 변경사항을 데이터베이스에 업데이트하였음.
+```
+
+> Familing
+* 2015 선린 해커톤 동상
+
+>> 기획
+
+```text
+    Familing은 가족끼리 하고 싶었던 말을 진솔하게 전하고 가족간의 추억을 저장하며 가족간의 상의나 문제해결을 도와주는 어플리케이션.
+    가족이 한 그룹이 되며, 그 안에 아빠, 엄마, 아들, 딸 등 각 가족 구성원이 가입되어 있는 형식임.
+    가족 구성원들이 게시글을 게시판에 게시할 수 있으며, 그룹 구성원들은 그에 댓글을 달아 반응할 수 있음.
+```
+
+>> 기술
+
+```text
+    서버는 Node.JS로 구동하였으며 CoffeeScript로 작성되었고, MongoDB를 사용하였음.
+    클라이언트는 안드로이드로 구현하였으며, Realm 데이터베이스와 SharedPreferences를 사용하였음.
+    FloatingActionButton, Material, MaterialEditText, MaterialDialog 라이브러리를 사용하였음.
+    서버 -> 안드로이드 클라이언트에는 Google Cloud Messaging을 사용하였음.
+    안드로이드 클라이언트 -> 서버에는 HTTP 통신을 이용하였음. (Retrofit 사용)
+    각각 게시글은 데이터베이스에 저장하였으며 댓글도 따로 데이터베이스 객체로 저장하고 게시글 객체에 관계시키는 방식으로 구현하였음.
+```
+
+> Paper Crane
+* 2015 제 8회 AppJam 우수상
+
+>> 기획
+
+```text
+    천 마리의 종이학 접기에서 모티브를 받은 앱으로, 소중한 사람에게 긴 기간동안 편지를 모아 사용자가 설정한 시각에 한번에 보내주는 어플리케이션임.
+    현재 작성중인 편지 목록, 보낼 대상 추가, 즉시 전송 기능을 제공.
+    보내는 대상은 전화번호부에서 찾거나 직접 전화번호를 입력해서 전송할 수 있음.
+```
+
+>> 기술
+
+```text
+    서버를 이용하지 않고 클라이언트로만 구현하였음.
+    클라이언트는 안드로이드로 구현하였으며,  SharedPreferences를 사용하였음.
+    FloatingActionButton, Material, MaterialEditText, MaterialDialog 라이브러리를 사용하였음.
+    서버 -> 안드로이드 클라이언트에는 Google Cloud Messaging을 사용하였음.
+    안드로이드 클라이언트 -> 서버에는 HTTP 통신을 이용하였음. (Retrofit 사용)
+    각각의 거래 항목은 데이터베이스에 저장하였으며 변경사항이 요청자 / 거래자로부터 발생하면 GCM을 이용해 클라이언트에 푸시를 보내고, 변경사항을 데이터베이스에 업데이트하였음.
 ```
 
 ## 2016
@@ -90,6 +130,8 @@
     Android Developer : 오준석
     Server Developer : 박지수
     UI/UX Designer : 구창림, 전하연
+
+    
 ```
 
 >> 기획
@@ -105,6 +147,8 @@
 >> 기술
 
 ```text
+    서버는 Node.JS로 구동하였으며 CoffeeScript로 작성되었고, MongoDB를 사용하였음.
+    클라이언트는 안드로이드로 구현하였으며, Realm 데이터베이스와 SharedPreferences를 사용하였음.
     서버 -> 클라이언트에는 Google Cloud Messaging을 사용하였음.
     클라이언트 -> 서버에는 HTTP 통신을 이용하였음. (Retrofit 사용)
     레이드의 각각 방은 Socket을 이용해 실시간 통신을 가능하게 하였고, 레이드당 방을 각각 생성하였음.
